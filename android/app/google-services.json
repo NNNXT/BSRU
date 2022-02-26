@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1004060252739",
+    "project_id": "zerotohero-2486a",
+    "storage_bucket": "zerotohero-2486a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004060252739:android:b9a72c2f73310a078652f6",
+        "android_client_info": {
+          "package_name": "com.example.openchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004060252739-nrjb92jou3f76bivu0snqdvpedqh44of.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN45Q1I-rr8AoTH0Es8ur_rsivkV9UrDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1004060252739-nrjb92jou3f76bivu0snqdvpedqh44of.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

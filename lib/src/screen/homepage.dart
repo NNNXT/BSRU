@@ -1,4 +1,6 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:openchat/data/mockdata.dart';
 import 'package:openchat/src/screen/chatContent.dart';
 import 'package:openchat/src/screen/homeContent.dart';
 
@@ -33,6 +35,17 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.add),
+        onPressed: () async {
+          for (int i = 0; i < MockupData().data.length; i++) {
+            await FirebaseFirestore.instance
+                .collection('users')
+                .add(MockupData().data[i]);
+            debugPrint('รอบที่ ${i + 1} แอดข้อมูลสำเร็จ');
+          }
+        },
+      ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
