@@ -1,14 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:openchat/data/mockdata.dart';
-import 'package:openchat/src/screen/userEdit.dart';
 
 class HomeContent extends StatelessWidget {
   const HomeContent({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    var mockupData = MockupData().data;
     return SafeArea(
       child: SingleChildScrollView(
         child: Padding(
