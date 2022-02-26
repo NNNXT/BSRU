@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:openchat/data/mockdata.dart';
 import 'package:openchat/src/screen/chat_content.dart';
+import 'package:openchat/src/screen/etc_content.dart';
 import 'package:openchat/src/screen/home_content.dart';
 
 class HomePage extends StatefulWidget {
@@ -13,16 +14,11 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
 
   static const List<Widget> _widgetOptions = <Widget>[
     HomeContent(),
     ChatContent(),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
+    ETCContent()
   ];
 
   void _onItemTapped(int index) {
@@ -61,7 +57,7 @@ class _HomePageState extends State<HomePage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
-            label: 'Setting',
+            label: 'etc',
           ),
         ],
         currentIndex: _selectedIndex,
