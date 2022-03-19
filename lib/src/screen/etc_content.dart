@@ -28,13 +28,6 @@ class ETCContent extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              onTap: () => Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const ImagePicker())),
-              title: const Text('การดึงข้อมูลรูปภาพจากตัวเครื่อง'),
-            ),
-          ),
-          Card(
-            child: ListTile(
               onTap: () => Navigator.push(
                   context,
                   MaterialPageRoute(
