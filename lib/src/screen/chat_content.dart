@@ -16,7 +16,7 @@ class ChatContent extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text(
+              const SelectableText(
                 'OPENTALK',
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
               ),
