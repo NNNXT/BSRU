@@ -11,6 +11,7 @@ void main() async {
       systemNavigationBarColor: Colors.orange,
     ),
   );
+
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   await EasyLocalization.ensureInitialized();
